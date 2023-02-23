@@ -21,14 +21,6 @@ const routes: Array<RouteRecordRaw> = [
         path: '/random',
         component: () => import('../views/random/index.vue'),
     },
-    {
-        path: '/upload',
-        component: () => import('../views/upload/index.vue'),
-    },
-    {
-        path: '/forums',
-        component: () => import('../views/forums/index.vue'),
-    },
 ];
 
 const router = createRouter({

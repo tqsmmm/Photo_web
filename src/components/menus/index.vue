@@ -13,8 +13,6 @@
             <el-menu-item index="latest">Latest</el-menu-item>
             <el-menu-item index="toplist">Toplist</el-menu-item>
             <el-menu-item index="random">Random</el-menu-item>
-            <el-menu-item index="upload">Upload</el-menu-item>
-            <el-menu-item index="forums">Forums</el-menu-item>
         </el-menu>
     </div>
 </template>
