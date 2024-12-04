@@ -1,18 +1,16 @@
 <template>
-    <div class="index">
-        <menus></menus>
-        <search></search>
-        <tags></tags>
-        <picList :list="list"></picList>
-        <div></div>
-    </div>
+    <menus></menus>
+    <search></search>
+    <tags></tags>
+    <picList :list="list"></picList>
+    <div></div>
 </template>
 
 <script setup lang="ts">
-import menus from '../../components/menus/index.vue';
-import search from '../../components/search/index.vue';
-import tags from '../../components/tags/index.vue';
-import picList from '../../components/pic-list/index.vue';
+import menus from '../components/menu.vue';
+import search from '../components/search.vue';
+import tags from '../components/tag.vue';
+import picList from '../components/piclist.vue';
 
 const list = [
     { file: 'http://localhost:5173/images/wallhaven-6dqemx.jpg' },
@@ -26,12 +24,4 @@ const list = [
 ];
 </script>
 
-<style scoped lang="less">
-* {
-    margin: 0px;
-    padding: 0px;
-}
-.index {
-    height: 100vh;
-}
-</style>
+<style scoped lang="less"></style>

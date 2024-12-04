@@ -7,19 +7,19 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
-        component: () => import('../views/index/index.vue'),
+        component: () => import('../views/index.vue'),
     },
     {
         path: '/latest',
-        component: () => import('../views/latest/index.vue'),
+        component: () => import('../views/latest.vue'),
     },
     {
         path: '/toplist',
-        component: () => import('../views/toplist/index.vue'),
+        component: () => import('../views/toplist.vue'),
     },
     {
         path: '/random',
-        component: () => import('../views/random/index.vue'),
+        component: () => import('../views/random.vue'),
     },
 ];
 

@@ -22,6 +22,7 @@ const search = ref('');
     display: flex;
     justify-content: center;
     align-items: center;
+
     &-item {
         width: 600px;
     }

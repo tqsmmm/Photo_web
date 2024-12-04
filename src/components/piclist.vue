@@ -1,17 +1,9 @@
 <template>
     <div class="pic">
-        <div
-            :style="{ height: item.height + 'px', top: item.top + 'px', left: item.left + 'px' }"
-            v-for="(item, index) in items"
-            class="items"
-        >
-            <el-image
-                :src="item.file"
-                :zoom-rate="1.2"
-                :preview-src-list="srcList"
-                :initial-index="index"
-                loading="lazy"
-            />
+        <div :style="{ height: item.height + 'px', top: item.top + 'px', left: item.left + 'px' }"
+            v-for="(item, index) in items" class="items">
+            <el-image :src="item.file" :zoom-rate="1.2" :preview-src-list="srcList" :initial-index="index"
+                loading="lazy" />
         </div>
     </div>
 </template>
@@ -78,6 +70,7 @@ onMounted(() => {
 .pic {
     position: relative;
     height: 100%;
+
     .items {
         position: absolute;
         width: 300px;

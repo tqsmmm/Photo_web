@@ -1,15 +1,9 @@
 <template>
     <div class="menu">
-        <el-menu
-            style="width: 100%"
-            :default-active="activeIndex"
-            mode="horizontal"
-            router
-            :ellipsis="false"
-            @select="handleSelect"
-        >
+        <el-menu style="width: 100%" :default-active="activeIndex" mode="horizontal" router :ellipsis="false"
+            @select="handleSelect">
             <el-menu-item index="/">LOGO</el-menu-item>
-            <div class="flex-grow" />
+            <div class="flex-grow"></div>
             <el-menu-item index="latest">Latest</el-menu-item>
             <el-menu-item index="toplist">Toplist</el-menu-item>
             <el-menu-item index="random">Random</el-menu-item>
@@ -30,10 +24,12 @@ const handleSelect = (key: string, keyPath: string[]) => {
 .flex-grow {
     flex-grow: 1;
 }
+
 .menu {
     display: flex;
     justify-content: center;
     align-items: center;
+
     &-item {
         margin: 10px;
         padding: 10px;
